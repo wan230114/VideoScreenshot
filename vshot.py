@@ -98,7 +98,8 @@ def mydo(VideoFilePath, outdir, Similarity, spend, method=0):
     cv2.imwrite(mod % num_frames, frame)  # 截取第一张
     for num_frames_new, frame_new in ITERS:
         result = comp(frame, frame_new, method=1)
-        print('[ ]',  num_frames, num_frames_new,
+        print('[%.3f%%]' % (num_frames_new/num_frames_all*100),
+              num_frames, num_frames_new,
               mod % num_frames_new, result, result < Similarity)
         if result < Similarity:
             runAllImageSimilaryFun(frame, frame_new)
