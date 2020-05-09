@@ -1,0 +1,2 @@
+# VideoScreenshot
+打开视频文件进行按照不同画面自动截图，适用于众多PPT讲解视频截取PPT图片
