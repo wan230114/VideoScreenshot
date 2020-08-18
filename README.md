@@ -39,4 +39,5 @@ python vshot.py ./test/ppt_video.mp4 -o ./Testout/ -s 10 -S 0.97
 ```
 
 ## 其他工具
-DupImageFinder
+
+[DupImageFinder](./other_tools/DupImageFinder/) 用于对于截取的众多图片，进行二次去重。(先点击reg注册)
